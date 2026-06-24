@@ -1,4 +1,4 @@
-name = "contact-form"
+name = "contact-form-handler"
 main = "worker.js"
 compatibility_date = "2024-03-03"
 
