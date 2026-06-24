@@ -49,14 +49,15 @@ export default {
             }
             body {
               font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-              background-color: #f6f8fa;
+              background-color: #fafafa;
               margin: 0;
               padding: 0;
               -webkit-font-smoothing: antialiased;
+              color: #171717;
             }
             .wrapper {
               width: 100%;
-              background-color: #f6f8fa;
+              background-color: #fafafa;
               padding: 32px 16px;
             }
             .container {
@@ -64,50 +65,52 @@ export default {
               margin: 0 auto;
               background-color: #ffffff;
               border-radius: 12px;
-              border: 1px solid #e1e4e8;
+              border: 1px solid #ededed;
               overflow: hidden;
-              box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+              box-shadow: 0 1px 3px rgba(0,0,0,0.06);
             }
             .header {
-              background-color: #0d1117;
+              background-color: #ffffff;
               padding: 24px 32px;
               text-align: left;
-              border-bottom: 1px solid #21262d;
+              border-bottom: 1px solid #ededed;
             }
             .logo {
-              color: #ffffff;
+              color: #171717;
               font-size: 20px;
-              font-weight: 700;
+              font-weight: 600;
               letter-spacing: -0.03em;
               text-decoration: none;
-              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            }
+            .logo-dot {
+              color: #3ecf8e;
             }
             .content {
               padding: 32px 32px;
             }
             .badge {
               display: inline-block;
-              font-size: 11px;
+              font-size: 12px;
               text-transform: uppercase;
-              letter-spacing: 0.08em;
-              background-color: #ddf4ff;
-              color: #0969da;
-              padding: 4px 10px;
-              border-radius: 6px;
-              font-weight: 600;
+              letter-spacing: 0.05em;
+              background-color: #3ecf8e;
+              color: #171717;
+              padding: 2px 8px;
+              border-radius: 9999px;
+              font-weight: 500;
               margin-bottom: 16px;
             }
             h1 {
-              color: #1f2328;
+              color: #171717;
               font-size: 22px;
-              font-weight: 600;
+              font-weight: 500;
               letter-spacing: -0.02em;
               margin: 0 0 8px 0;
             }
             .intro {
-              color: #57606a;
+              color: #707070;
               font-size: 14px;
-              line-height: 1.5;
+              line-height: 1.45;
               margin: 0 0 24px 0;
             }
             .details-list {
@@ -115,7 +118,7 @@ export default {
             }
             .detail-item {
               margin-bottom: 20px;
-              border-bottom: 1px solid #f0f3f6;
+              border-bottom: 1px solid #ededed;
               padding-bottom: 16px;
             }
             .detail-item:last-child {
@@ -125,38 +128,38 @@ export default {
             }
             .label {
               font-size: 11px;
-              font-weight: 600;
-              color: #57606a;
+              font-weight: 500;
+              color: #707070;
               text-transform: uppercase;
               letter-spacing: 0.05em;
               margin-bottom: 6px;
             }
             .value {
-              font-size: 15px;
-              color: #1f2328;
+              font-size: 16px;
+              color: #171717;
               line-height: 1.5;
               word-break: break-word;
               overflow-wrap: break-word;
             }
-            .email-link {
-              color: #0969da;
-              text-decoration: none;
+            .value strong {
+              font-weight: 600;
             }
-            .email-link:hover {
+            .email-link {
+              color: #171717;
               text-decoration: underline;
             }
             .message-box {
-              background-color: #f6f8fa;
-              border-radius: 8px;
-              padding: 16px;
+              background-color: #1c1c1c;
+              color: #ffffff;
+              font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
               font-size: 14px;
-              color: #24292f;
-              line-height: 1.6;
-              margin-top: 6px;
+              line-height: 1.5;
+              padding: 16px;
+              border-radius: 6px;
+              margin-top: 8px;
               white-space: pre-wrap;
               word-break: break-word;
               overflow-wrap: break-word;
-              border: 1px solid #d0d7de;
             }
             .btn-wrap {
               text-align: center;
@@ -164,29 +167,29 @@ export default {
             }
             .btn {
               display: inline-block;
-              background-color: #24292f;
-              color: #ffffff !important;
+              background-color: #3ecf8e;
+              color: #171717 !important;
               text-decoration: none;
               font-weight: 500;
               font-size: 14px;
-              padding: 12px 24px;
+              padding: 8px 16px;
               border-radius: 6px;
               transition: background-color 0.2s ease;
             }
             .btn:hover {
-              background-color: #1f2328;
+              background-color: #24b47e;
             }
             .footer {
-              background-color: #f6f8fa;
-              padding: 20px 32px;
-              border-top: 1px solid #d0d7de;
+              background-color: #fafafa;
+              padding: 24px 32px;
+              border-top: 1px solid #ededed;
               text-align: center;
             }
             .footer p {
               margin: 0;
-              font-size: 12px;
-              color: #57606a;
-              line-height: 1.5;
+              font-size: 13px;
+              color: #707070;
+              line-height: 1.45;
             }
             @media only screen and (max-width: 480px) {
               .wrapper {
@@ -208,7 +211,7 @@ export default {
           <div class="wrapper">
             <div class="container">
               <div class="header">
-                <div class="logo">DIGINIXIT.</div>
+                <div class="logo">DIGINIXIT<span class="logo-dot">.</span></div>
               </div>
               <div class="content">
                 <span class="badge">Inquiry Received</span>
