@@ -164,6 +164,7 @@ export default {
             .btn-wrap {
               text-align: center;
               margin-top: 28px;
+              color: #ffffff;
             }
             .btn {
               display: inline-block;
