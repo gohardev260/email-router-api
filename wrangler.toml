@@ -1,0 +1,6 @@
+name = "contact-form"
+main = "worker.js"
+compatibility_date = "2024-03-03"
+
+[[send_email]]
+name = "SEND_EMAIL"
